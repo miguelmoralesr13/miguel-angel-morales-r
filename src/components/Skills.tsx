@@ -119,27 +119,30 @@ const Skills: React.FC = () => {
                 {t('skills.certifications')}
               </h3>
               <ul className="space-y-3">
-                {(t('skills.certifications_list', { returnObjects: true }) as string[]).map((cert: string, index: number) => {
-                  const certLinks = [
-                    "/certificateds/TypeScript-Tu-completa-guia-y-manual.jpg",
-                    "/certificateds/React- De cero a experto - Edición 2025.jpg",
-                    "/certificateds/NestJS Node Typescript al estilo Angular para crear APIS.jpg",
-                    "/certificateds/Microservicios Spring Boot Spring Cloud Netflix Eureka 2025.jpg"
-                  ]
-                  return (
-                    <li key={index} className="flex items-center text-gray-300">
-                      <span className="text-blue-400 mr-2">•</span>
-                      <a 
-                        href={certLinks[index]} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="hover:text-blue-400 transition-colors duration-300"
-                      >
-                        {cert}
-                      </a>
-                    </li>
-                  )
-                })}
+                {Array.isArray(t('skills.certifications_list', { returnObjects: true }))
+                  ? (t('skills.certifications_list', { returnObjects: true }) as string[]).map((cert: string, index: number) => {
+                      const certLinks = [
+                        "/certificateds/TypeScript-Tu-completa-guia-y-manual.jpg",
+                        "/certificateds/React- De cero a experto - Edición 2025.jpg",
+                        "/certificateds/NestJS Node Typescript al estilo Angular para crear APIS.jpg",
+                        "/certificateds/Microservicios Spring Boot Spring Cloud Netflix Eureka 2025.jpg"
+                      ];
+                      return (
+                        <li key={index} className="flex items-center text-gray-300">
+                          <span className="text-blue-400 mr-2">•</span>
+                          <a 
+                            href={certLinks[index]} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="hover:text-blue-400 transition-colors duration-300"
+                          >
+                            {cert}
+                          </a>
+                        </li>
+                      );
+                    })
+                  : <li className="text-gray-400">No certifications available</li>
+                }
               </ul>
             </div>
 
@@ -149,12 +152,15 @@ const Skills: React.FC = () => {
                 {t('skills.achievements')}
               </h3>
               <ul className="space-y-3">
-                {(t('skills.achievements_list', { returnObjects: true }) as string[]).map((achievement: string, index: number) => (
-                  <li key={index} className="flex items-center text-gray-300">
-                    <span className="text-blue-400 mr-2">•</span>
-                    {achievement}
-                  </li>
-                ))}
+                {Array.isArray(t('skills.achievements_list', { returnObjects: true }))
+                  ? (t('skills.achievements_list', { returnObjects: true }) as string[]).map((achievement: string, index: number) => (
+                      <li key={index} className="flex items-center text-gray-300">
+                        <span className="text-blue-400 mr-2">•</span>
+                        {achievement}
+                      </li>
+                    ))
+                  : <li className="text-gray-400">No achievements available</li>
+                }
               </ul>
             </div>
           </div>

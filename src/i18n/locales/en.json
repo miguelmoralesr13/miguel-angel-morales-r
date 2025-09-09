@@ -1,4 +1,13 @@
 {
+
+  "portfolio":{
+    "home": "",
+    "about": "About me",
+    "experience": "Experience",
+    "skills": "Skills & Technologies",
+    "projects": "Projects",
+    "cv": "CV"
+  },
   "about": {
     "title": "About Me",
     "description1": "I'm a passionate Full Stack Developer with over 5 years of experience, specialized in backend development and microservices architectures. Currently working at Fábrica Digital Scotiabank, where I develop critical banking solutions using Spring Boot, React, and Node.js.",
@@ -130,10 +139,12 @@
     }
   },
   "cv": {
-    "title": "Download CV",
+    "title": "Download C.V.",
     "description": "You can download my resume in PDF format to learn more about my professional experience and skills as a Full Stack developer specialized in backend.",
     "download_en": "Download CV (English)",
-    "download_es": "Download CV (Spanish)"
+    "download_es": "Download CV (Spanish)",
+    "contact": "Contact: miguel.moralesr@hotmail.com",
+    "phone": "Tel: +52 56 1366 1376"
   },
   "common": {
     "language": "Language",

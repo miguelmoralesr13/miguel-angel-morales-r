@@ -49,7 +49,7 @@ const Experience: React.FC = () => {
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-400"></div>
             
             <div className="space-y-12">
-              {experiences.map((exp, index) => (
+              {experiences.map((exp, index)  => (
                 <div key={index} className="relative flex items-start">
                   {/* Timeline dot */}
                   <div className="absolute left-6 w-4 h-4 bg-blue-400 rounded-full border-4 border-gray-900 z-10"></div>
@@ -64,12 +64,15 @@ const Experience: React.FC = () => {
                     </div>
                     
                     <ul className="space-y-2 mb-4">
-                      {exp.description.map((desc, descIndex) => (
-                        <li key={descIndex} className="text-gray-300 flex items-start">
-                          <span className="text-blue-400 mr-2 mt-1">•</span>
-                          {desc}
-                        </li>
-                      ))}
+                      {Array.isArray(exp.description)
+                        ? exp.description.map((desc, descIndex) => (
+                            <li key={descIndex} className="text-gray-300 flex items-start">
+                              <span className="text-blue-400 mr-2 mt-1">•</span>
+                              {desc}
+                            </li>
+                          ))
+                        : <li className="text-gray-400">No description available</li>
+                      }
                     </ul>
                     
                     <div className="flex flex-wrap gap-2">
