@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const skillsData = [
   { name: 'Node.js', percent: 95, color: 'from-green-400 to-blue-500', size: 110 },
@@ -55,6 +56,30 @@ const SkillsV2: React.FC = () => {
     return () => clearInterval(interval);
   }, [activeSkill]);
 
+  // Traducción
+  // eslint-disable-next-line
+  // @ts-ignore
+  const { t } = useTranslation();
+  const certifications = [
+    {
+      name: t('skills.certifications_list.0', 'TypeScript: Tu completa guía y manual'),
+      link: '/miguel-angel-morales-r/certificateds/TypeScript-Tu-completa-guia-y-manual.jpg',
+    },
+    {
+      name: t('skills.certifications_list.1', 'React: De cero a experto - Edición 2025'),
+      link: '/miguel-angel-morales-r/certificateds/React-De-cero-a-experto-Edición-2025.jpg',
+    },
+    {
+      name: t('skills.certifications_list.2', 'NestJS Node Typescript al estilo Angular para crear APIS'),
+      link: '/miguel-angel-morales-r/certificateds/NestJS-Node-Typescript-al-estilo-Angular-para-crear-APIS.jpg',
+    },
+    {
+      name: t('skills.certifications_list.3', 'Microservicios Spring Boot Spring Cloud Netflix Eureka 2025'),
+      link: '/miguel-angel-morales-r/certificateds/Microservicios-Spring-Boot-Spring-Cloud-Netflix-Eureka-2025.jpg',
+    },
+  ];
+  const achievements = t('skills.achievements_list', { returnObjects: true }) as string[];
+
   return (
     <section className="fixed inset-0 w-screen h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-gray-900 overflow-hidden z-30">
       {/* Floating skill circles */}
@@ -87,6 +112,40 @@ const SkillsV2: React.FC = () => {
           <div className="mt-2 text-6xl text-blue-300">{skillsData[activeSkill].percent}%</div>
         </motion.div>
       )}
+      {/* Card inferior: Certificados y logros */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="fixed bottom-8 left-1/2 -translate-x-1/2 w-full max-w-3xl px-6 py-8 rounded-3xl bg-gray-900/90 shadow-2xl border-4 border-blue-400/30 z-40 backdrop-blur-lg"
+      >
+        <div className="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="text-2xl font-bold text-green-300 mb-4 flex items-center"><span className="text-3xl mr-2">🏆</span>{t('skills.certifications')}</h3>
+            <ul className="space-y-3">
+              {certifications.map((cert, idx) => (
+                <li key={idx} className="flex items-center text-blue-200">
+                  <span className="text-blue-400 mr-2">•</span>
+                  <a href={cert.link} target="_blank" rel="noopener noreferrer" className="hover:text-green-300 underline transition-colors duration-300">
+                    {cert.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-purple-300 mb-4 flex items-center"><span className="text-3xl mr-2">🎯</span>{t('skills.achievements')}</h3>
+            <ul className="space-y-3">
+              {achievements.map((ach, idx) => (
+                <li key={idx} className="flex items-center text-blue-200">
+                  <span className="text-purple-400 mr-2">•</span>
+                  {ach}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 };

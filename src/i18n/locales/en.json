@@ -82,8 +82,8 @@
   "skills": {
     "title": "Skills & Technologies",
     "proficiency": "Technical Proficiency",
-    "certifications": "Certifications",
-    "achievements": "Key Achievements",
+  "certifications": "Certificates",
+  "achievements": "Achievements",
     "categories": {
       "backend": {
         "name": "Backend Development",

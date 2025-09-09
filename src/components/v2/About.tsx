@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const profileImg = '/photo.jpg'; // Actualiza la ruta para usar la nueva foto
+const profileImg = '/miguel-angel-morales-r/photo.jpg'; // Actualiza la ruta para usar la nueva foto
 
 const AboutV2: React.FC = () => {
   const { t } = useTranslation();
