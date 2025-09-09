@@ -15,8 +15,18 @@ const PortfolioV2: React.FC = () => {
   useEffect(() => {
     // Prevent default scroll on body to avoid double scroll
     document.body.style.overflow = 'hidden';
+    // Actualiza Swiper al montar y al hacer resize
+    const updateSwiper = () => {
+      if (swiperRef.current && swiperRef.current.swiper) {
+        swiperRef.current.swiper.update();
+        swiperRef.current.swiper.slideTo(0, 0);
+      }
+    };
+    window.addEventListener('resize', updateSwiper);
+    setTimeout(updateSwiper, 100); // Asegura que Swiper se actualice tras el render inicial
     return () => {
       document.body.style.overflow = '';
+      window.removeEventListener('resize', updateSwiper);
     };
   }, []);
 
