@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 
 const skillsData = [
   { name: 'Node.js', percent: 95, color: 'from-green-400 to-blue-500', size: 110 },
@@ -35,7 +34,6 @@ const getRandomPositions = (count: number) => {
 };
 
 const SkillsV2: React.FC = () => {
-  const { t } = useTranslation();
   const [activeSkill, setActiveSkill] = useState<number | null>(null);
   const [positions, setPositions] = useState(() => getRandomPositions(skillsData.length));
   useEffect(() => {

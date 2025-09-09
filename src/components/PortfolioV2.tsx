@@ -1,10 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import About from './About';
-import Experience from './Experience';
-import Projects from './Projects';
-import Skills from './Skills';
-import Contact from './Contact';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Mousewheel } from 'swiper/modules';
 import HomeV2 from './v2/Home';
@@ -12,8 +7,6 @@ import AboutV2 from './v2/About';
 import ExperienceV2 from './v2/Experience';
 import SkillsV2 from './v2/Skills';
 import ProjectsV2 from './v2/Projects';
-import 'swiper/css';
-import 'swiper/css/navigation';
 import CVGenerator from './v2/CVGenerator';
 
 const PortfolioV2: React.FC = () => {

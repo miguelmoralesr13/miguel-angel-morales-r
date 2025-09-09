@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import CVGenerator from './CVGenerator'
 
 const Contact: React.FC = () => {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   return (
     <section id="cv" className="py-10 bg-gray-800">
       <div className="container mx-auto px-6">
