@@ -1,0 +1,143 @@
+{
+  "about": {
+    "title": "About Me",
+    "description1": "I'm a passionate Full Stack Developer with over 5 years of experience, specialized in backend development and microservices architectures. Currently working at Fábrica Digital Scotiabank, where I develop critical banking solutions using Spring Boot, React, and Node.js.",
+    "description2": "My experience spans from creating As a Service platforms with distributed architecture to developing microservices for the financial sector. I specialize in technologies like TypeScript, NestJS, Go, Java, and databases like PostgreSQL and MongoDB.",
+    "description3": "I have certifications in TypeScript, React, NestJS, and Microservices with Spring Boot, which allows me to stay updated with industry best practices and contribute to innovative projects.",
+    "experience": "Years of Experience",
+    "projects": "Completed Projects",
+    "technologies": "Technologies",
+    "certifications": "Certifications"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "cv": "C.V"
+  },
+  "hero": {
+    "title": "Miguel Angel Morales",
+    "subtitle": "Full Stack Software Engineer",
+    "description": "Specialized in Backend Development with expertise in building scalable, high-performance applications and robust API architectures.",
+    "view_work": "View My Work",
+    "get_in_touch": "Go to C.V."
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "current": "Present",
+    "jobs": {
+      "scotiabank": {
+        "title": "Full Stack Developer",
+        "company": "Fábrica Digital Scotiabank",
+        "period": "June 2021 - Present",
+        "description": [
+          "Creation and updating of microservices with Spring Boot and Spring Cloud",
+          "Development of React features for banking applications",
+          "Creation of Node.js services with mock services for testing and development",
+          "Implementation of microservices architectures in banking environments",
+          "Collaboration in agile teams for financial solutions development",
+          "Maintenance and optimization of critical banking sector applications"
+        ]
+      },
+      "freelance": {
+        "title": "Full Stack Developer - DevOps",
+        "company": "Freelance",
+        "period": "February 2021 - May 2021",
+        "description": [
+          "Maintenance of platforms developed in Vue.js, React and Node.js",
+          "Implementation of DevOps solutions for deployment optimization",
+          "Development of custom features according to client requirements",
+          "Performance and scalability optimization of web applications",
+          "Independent management of development projects"
+        ]
+      },
+      "ebitware": {
+        "title": "Full Stack Developer",
+        "company": "e-bitware",
+        "period": "April 2019 - February 2021",
+        "description": [
+          "Creation, design, requirements gathering, implementation and leadership of web platforms with PWA technology in Angular, Vue.js, Node.js",
+          "Creation of auto-scaling script for transactional As a Service platform",
+          "Creation and implementation of data sponsorship Gateway created with Golang",
+          "Creation of administrative Backend with distributed architecture for As a Service platform with Node.js (NestJS)",
+          "Implementation of business analytics for platform reporting",
+          "Creation of As a Service platform for inventory control and airtime sales with distributed architecture",
+          "Maintenance of web applications created in Angular and Express",
+          "Creation of middleware between OCR system and API created with Java"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "proficiency": "Technical Proficiency",
+    "certifications": "Certifications",
+    "achievements": "Key Achievements",
+    "categories": {
+      "backend": {
+        "name": "Backend Development",
+        "icon": "⚙️"
+      },
+      "frontend": {
+        "name": "Frontend Development",
+        "icon": "🎨"
+      },
+      "databases": {
+        "name": "Databases",
+        "icon": "🗄️"
+      },
+      "cloud": {
+        "name": "Cloud & DevOps",
+        "icon": "☁️"
+      },
+      "tools": {
+        "name": "Package Managers & Tools",
+        "icon": "🛠️"
+      },
+      "architecture": {
+        "name": "Architecture & Principles",
+        "icon": "🏗️"
+      }
+    },
+    "certifications_list": [
+      "TypeScript: Your complete guide and manual - Udemy",
+      "React: From zero to expert (Hooks and MERN) - Udemy",
+      "NestJS: Node + TypeScript in Angular style to create APIs - Udemy",
+      "Microservices with Spring Boot and Spring Cloud Netflix Eureka - Udemy"
+    ],
+    "achievements_list": [
+      "Development of microservices for critical banking applications",
+      "Creation of As a Service platforms with distributed architecture",
+      "Implementation of auto-scaling for transactional platforms",
+      "Technical leadership in PWA development and complex systems"
+    ]
+  },
+  "projects": {
+    "title": "My Projects",
+    "loading": "Loading projects...",
+    "error_message": "You can still view my projects on",
+    "no_description": "No description available",
+    "view_readme": "View README",
+    "github": "GitHub",
+    "view_all_projects": "View All Projects on GitHub",
+    "readme_modal": {
+      "title": "README -",
+      "loading": "Loading README...",
+      "not_found": "# README not found\n\nThis project does not have a README.md file available.",
+      "close": "Close"
+    }
+  },
+  "cv": {
+    "title": "Download CV",
+    "description": "You can download my resume in PDF format to learn more about my professional experience and skills as a Full Stack developer specialized in backend.",
+    "download_en": "Download CV (English)",
+    "download_es": "Download CV (Spanish)"
+  },
+  "common": {
+    "language": "Language",
+    "spanish": "Spanish",
+    "english": "English"
+  }
+}

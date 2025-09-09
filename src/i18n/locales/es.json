@@ -1,0 +1,143 @@
+{
+  "about": {
+    "title": "Sobre Mí",
+    "description1": "Soy un Desarrollador Full Stack apasionado con más de 5 años de experiencia, especializado en desarrollo backend y arquitecturas de microservicios. Actualmente trabajo en Fábrica Digital Scotiabank, donde desarrollo soluciones bancarias críticas utilizando Spring Boot, React y Node.js.",
+    "description2": "Mi experiencia abarca desde la creación de plataformas As a Service con arquitectura distribuida hasta el desarrollo de microservicios para el sector financiero. Me especializo en tecnologías como TypeScript, NestJS, Go, Java y bases de datos como PostgreSQL y MongoDB.",
+    "description3": "Tengo certificaciones en TypeScript, React, NestJS y Microservicios con Spring Boot, lo que me permite mantenerme actualizado con las mejores prácticas de la industria y contribuir a proyectos innovadores.",
+    "experience": "Años de Experiencia",
+    "projects": "Proyectos Completados",
+    "technologies": "Tecnologías",
+    "certifications": "Certificaciones"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "cv": "C.V"
+  },
+  "hero": {
+    "title": "Miguel Angel Morales",
+    "subtitle": "Ingeniero de Software Full Stack",
+    "description": "Especializado en Desarrollo Backend con experiencia en la construcción de aplicaciones escalables, de alto rendimiento y arquitecturas de API robustas.",
+    "view_work": "Ver Mi Trabajo",
+    "get_in_touch": "Ve al C.V."
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "current": "Actualidad",
+    "jobs": {
+      "scotiabank": {
+        "title": "Desarrollador Full Stack",
+        "company": "Fábrica Digital Scotiabank",
+        "period": "Junio 2021 - Actualidad",
+        "description": [
+          "Creación y actualización de microservicios con Spring Boot y Spring Cloud",
+          "Desarrollo de funcionalidades en React para aplicaciones bancarias",
+          "Creación de servicios de Node.js con servicios mock para testing y desarrollo",
+          "Implementación de arquitecturas de microservicios en entornos bancarios",
+          "Colaboración en equipos ágiles para desarrollo de soluciones financieras",
+          "Mantenimiento y optimización de aplicaciones críticas del sector bancario"
+        ]
+      },
+      "freelance": {
+        "title": "Developer Full Stack - DevOps",
+        "company": "Freelance",
+        "period": "Febrero 2021 - Mayo 2021",
+        "description": [
+          "Mantenimiento de plataformas desarrolladas en Vue.js, React y Node.js",
+          "Implementación de soluciones DevOps para optimización de despliegues",
+          "Desarrollo de funcionalidades personalizadas según requerimientos del cliente",
+          "Optimización de rendimiento y escalabilidad de aplicaciones web",
+          "Gestión de proyectos de desarrollo de forma independiente"
+        ]
+      },
+      "ebitware": {
+        "title": "Desarrollador Full Stack",
+        "company": "e-bitware",
+        "period": "Abril 2019 - Febrero 2021",
+        "description": [
+          "Creación, diseño, levantamiento de requerimientos, implementación y liderazgo de plataformas web con tecnología PWA en Angular, Vue.js, Node.js",
+          "Creación de script de auto-scaling para plataforma transaccional As a Service",
+          "Creación e implementación de Gateway para patrocinio de datos creado con Golang",
+          "Creación de Backend administrativa con arquitectura distribuida para plataforma As a Service con Node.js (NestJS)",
+          "Implementación de business analytics para reporteo de plataforma",
+          "Creación de plataforma As a Service para control de inventarios y venta de tiempo aire con arquitectura distribuida",
+          "Mantenimiento de aplicaciones web creadas en Angular y Express",
+          "Creación de middleware entre sistema de OCR y API creado con Java"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades y Tecnologías",
+    "proficiency": "Competencia Técnica",
+    "certifications": "Certificaciones",
+    "achievements": "Logros Clave",
+    "categories": {
+      "backend": {
+        "name": "Desarrollo Backend",
+        "icon": "⚙️"
+      },
+      "frontend": {
+        "name": "Desarrollo Frontend",
+        "icon": "🎨"
+      },
+      "databases": {
+        "name": "Bases de Datos",
+        "icon": "🗄️"
+      },
+      "cloud": {
+        "name": "Cloud y DevOps",
+        "icon": "☁️"
+      },
+      "tools": {
+        "name": "Gestores de Paquetes y Herramientas",
+        "icon": "🛠️"
+      },
+      "architecture": {
+        "name": "Arquitectura y Principios",
+        "icon": "🏗️"
+      }
+    },
+    "certifications_list": [
+      "TypeScript: Tu completa guía y manual de mano - Udemy",
+      "React: De cero a experto (Hooks y MERN) - Udemy",
+      "NestJS: Node + TypeScript al estilo Angular para crear APIs - Udemy",
+      "Microservicios con Spring Boot y Spring Cloud Netflix Eureka - Udemy"
+    ],
+    "achievements_list": [
+      "Desarrollo de microservicios para aplicaciones bancarias críticas",
+      "Creación de plataformas As a Service con arquitectura distribuida",
+      "Implementación de auto-scaling para plataformas transaccionales",
+      "Liderazgo técnico en desarrollo de PWAs y sistemas complejos"
+    ]
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "loading": "Cargando proyectos...",
+    "error_message": "Puedes ver mis proyectos en",
+    "no_description": "No hay descripción disponible",
+    "view_readme": "Ver README",
+    "github": "GitHub",
+    "view_all_projects": "Ver Todos los Proyectos en GitHub",
+    "readme_modal": {
+      "title": "README -",
+      "loading": "Cargando README...",
+      "not_found": "# README no encontrado\n\nEste proyecto no tiene un archivo README.md disponible.",
+      "close": "Cerrar"
+    }
+  },
+  "cv": {
+    "title": "Descargar CV",
+    "description": "Puedes descargar mi currículum en formato PDF para conocer más sobre mi experiencia profesional y habilidades como desarrollador Full Stack especializado en backend.",
+    "download_en": "Descargar CV (Inglés)",
+    "download_es": "Descargar CV (Español)"
+  },
+  "common": {
+    "language": "Idioma",
+    "spanish": "Español",
+    "english": "Inglés"
+  }
+}
