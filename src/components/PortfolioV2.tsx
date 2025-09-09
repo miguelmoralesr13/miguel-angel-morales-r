@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Mousewheel } from 'swiper/modules';
@@ -7,7 +7,7 @@ import AboutV2 from './v2/About';
 import ExperienceV2 from './v2/Experience';
 import SkillsV2 from './v2/Skills';
 import ProjectsV2 from './v2/Projects';
-import CVGenerator from './v2/CVGenerator';
+const CVGenerator = React.lazy(() => import('./v2/CVGenerator'));
 
 const PortfolioV2: React.FC = () => {
   const swiperRef = useRef<any>(null);
@@ -156,7 +156,11 @@ const PortfolioV2: React.FC = () => {
         <SwiperSlide><ExperienceV2 /></SwiperSlide>
         <SwiperSlide><SkillsV2 /></SwiperSlide>
         <SwiperSlide><ProjectsV2 /></SwiperSlide>
-        <SwiperSlide><CVGenerator /></SwiperSlide>
+        <SwiperSlide>
+          <Suspense fallback={<div className="flex items-center justify-center h-full text-blue-400 text-2xl">Cargando CV...</div>}>
+            <CVGenerator />
+          </Suspense>
+        </SwiperSlide>
       </Swiper>
     </div>
   );
