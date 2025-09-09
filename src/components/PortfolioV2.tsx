@@ -142,15 +142,16 @@ const PortfolioV2: React.FC = () => {
         </div>
       </div>
       {/* Swiper vertical */}
-      <Swiper
-        direction="vertical"
-        pagination={{ clickable: true }}
-        mousewheel={true}
-        modules={[Pagination, Mousewheel]}
-        className="h-screen"
-        style={{ minHeight: '100vh' }}
-        ref={swiperRef}
-      >
+       <Swiper
+         direction="vertical"
+         initialSlide={0}
+         pagination={{ clickable: true }}
+         mousewheel={true}
+         modules={[Pagination, Mousewheel]}
+         className="h-screen"
+         style={{ minHeight: '100vh' }}
+         ref={swiperRef}
+       >
         <SwiperSlide><HomeV2 /></SwiperSlide>
         <SwiperSlide><AboutV2 /></SwiperSlide>
         <SwiperSlide><ExperienceV2 /></SwiperSlide>
