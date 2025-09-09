@@ -5,7 +5,7 @@ import PortfolioV2 from './components/PortfolioV2';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/miguel-angel-morales-r/'>
       <Routes>
         <Route path="/" element={<Portfolio />} />
         <Route path="/v2" element={<PortfolioV2 />} />
