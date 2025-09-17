@@ -60,7 +60,7 @@ const CVGenerator: React.FC = () => {
       },
       {
         name: t('skills.categories.frontend.name'),
-        techs: ["React", "Vue.js", "Angular", "PWA", "JavaScript", "TypeScript"],
+        techs: ["React", "Vue.js", "Angular", "PWA", "JavaScript", "TypeScript", "Material Design", "Responsive Design"],
       },
       {
         name: t('skills.categories.databases.name'),
@@ -72,16 +72,21 @@ const CVGenerator: React.FC = () => {
       },
       {
         name: t('skills.categories.tools.name'),
-        techs: ["Linux", "Bash", "Git", "Socket.io", "SonarQube","Jenkins"],
+        techs: ["Linux", "Bash", "Git", "GitHub", "Socket.io", "SonarQube", "Jenkins", "VS Code", "Postman"],
       },
       {
         name: t('skills.categories.architecture.name'),
-        techs: ["Microservices", "Distributed Systems", "Kafka"],
+        techs: ["Microservices", "Distributed Systems", "Kafka", "Clean Architecture", "SOLID Principles", "UML"],
       },
       {
         name: t('skills.categories.testing.name'),
-        techs: ["Unit Testing", "Integration Testing", "JUnit", "Jest"],
+        techs: ["Unit Testing", "Integration Testing", "JUnit", "Jest", "Testing", "Documentation"],
       },
+      {
+        name: t('skills.categories.methodologies.name'),
+        techs: ["Agile", "Scrum"],
+      },
+      
     ];
     doc.setFont('helvetica', 'bold');
     doc.setTextColor(36, 99, 235);

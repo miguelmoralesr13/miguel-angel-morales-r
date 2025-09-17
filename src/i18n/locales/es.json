@@ -112,6 +112,10 @@
       "testing": {
         "name": "Testing y Calidad",
         "icon": "🧪"
+      },
+      "methodologies": {
+        "name": "Metodologías",
+        "icon": "📋"
       }
     },
     "certifications_list": [

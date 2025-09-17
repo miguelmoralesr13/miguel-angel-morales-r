@@ -1,69 +1,162 @@
-# React + TypeScript + Vite
+# Miguel Angel Morales - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website showcasing my skills as a Full Stack Developer. Built with React, TypeScript, and Vite, featuring internationalization support and dynamic CV generation.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Modern, mobile-first design with smooth animations
+- **Internationalization**: Support for Spanish and English languages
+- **Dynamic CV Generation**: PDF CV generation with real-time data
+- **GitHub Integration**: Live GitHub repositories display with README viewer
+- **Interactive Skills**: Animated floating skills with proficiency levels
+- **Professional Experience**: Detailed work history with technology stacks
+- **Projects Showcase**: GitHub projects with live README preview
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Visit the live portfolio: [https://miguelmoralesr13.github.io/miguel-angel-morales-r/](https://miguelmoralesr13.github.io/miguel-angel-morales-r/)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Technologies Used
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Frontend
+- **React 18** - UI library
+- **TypeScript** - Type safety and better development experience
+- **Vite** - Fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
+- **React Router** - Client-side routing
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Internationalization
+- **react-i18next** - Internationalization framework
+- **i18next-browser-languagedetector** - Language detection
+
+### PDF Generation
+- **jsPDF** - PDF generation library
+
+### Markdown Rendering
+- **react-markdown** - Markdown component for React
+
+### Development Tools
+- **ESLint** - Code linting
+- **Prettier** - Code formatting
+- **GitHub API** - Repository data fetching
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+- **Node.js** (version 16 or higher)
+- **npm** or **yarn** package manager
+- **Git** for version control
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/miguelmoralesr13/miguel-angel-morales-r.git
+cd miguel-angel-morales-r
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+# or
+yarn install
 ```
+
+### 3. Start Development Server
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+The application will be available at `http://localhost:5173`
+
+### 4. Build for Production
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── components/           # React components
+│   ├── v2/             # Version 2 components
+│   │   ├── CVGenerator.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Skills.tsx
+│   │   └── ...
+│   ├── About.tsx
+│   ├── Header.tsx
+│   ├── Projects.tsx
+│   └── ...
+├── i18n/               # Internationalization
+│   ├── index.ts
+│   └── locales/
+│       ├── en.json     # English translations
+│       └── es.json     # Spanish translations
+├── App.tsx
+├── main.tsx
+└── index.css
+```
+
+## 🌐 Deployment to GitHub Pages
+
+4. **Deploy**:
+   ```bash
+   npm run deploy
+   ```
+
+## 🔧 Configuration
+
+### GitHub API Configuration
+
+The portfolio fetches data from GitHub API. No API key is required for public repositories.
+
+### Internationalization
+
+Language files are located in `src/i18n/locales/`:
+- `en.json` - English translations
+- `es.json` - Spanish translations
+
+To add a new language:
+1. Create a new JSON file in the locales folder
+2. Add the language to `src/i18n/index.ts`
+3. Update the language switcher component
+
+## 📝 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run deploy` - Deploy to GitHub Pages (if configured)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 📞 Contact
+
+- **Email**: miguel.moralesr@hotmail.com
+- **LinkedIn**: [Miguel Angel Morales](https://linkedin.com/in/miguel-angel-morales)
+- **GitHub**: [@miguelmoralesr13](https://github.com/miguelmoralesr13)
+
+---
+
+Made with ❤️ by Miguel Angel Morales
