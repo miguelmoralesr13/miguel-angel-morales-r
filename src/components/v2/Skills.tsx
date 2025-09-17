@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 const skillsData = [
   { name: 'Node.js', percent: 95, color: 'from-green-400 to-blue-500', size: 120 },
   { name: 'NestJS', percent: 90, color: 'from-green-400 to-blue-500', size: 120 },
-  { name: 'Java', percent: 85, color: 'from-green-400 to-blue-500', size: 1200 },
+  { name: 'Java', percent: 85, color: 'from-green-400 to-blue-500', size: 120 },
   { name: 'Go', percent: 80, color: 'from-green-400 to-blue-500', size: 120 },
   { name: 'Spring Boot', percent: 90, color: 'from-green-400 to-blue-500', size: 100 },
   { name: 'Kafka', percent: 85, color: 'from-green-400 to-blue-500', size: 85 },

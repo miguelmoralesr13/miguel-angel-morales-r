@@ -129,7 +129,10 @@
       "Development of microservices for critical banking applications",
       "Creation of As a Service platforms with distributed architecture",
       "Implementation of auto-scaling for transactional platforms",
-      "Technical leadership in PWA development and complex systems"
+      "Technical leadership in PWA development and complex systems",
+      "Development of a Gateway with Go that intercepted and stored information for telecommunications companies to provide sponsored data",
+      "Integration of an OCR system with a web application that read vehicle license plates and depending on that data raised a mechanical barrier if registered as a user or not",
+      "Creation of a multi-client platform where a data sponsorship service could be contracted"
     ]
   },
   "projects": {

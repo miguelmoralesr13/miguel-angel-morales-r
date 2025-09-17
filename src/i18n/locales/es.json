@@ -128,7 +128,10 @@
       "Desarrollo de microservicios para aplicaciones bancarias críticas",
       "Creación de plataformas As a Service con arquitectura distribuida",
       "Implementación de auto-scaling para plataformas transaccionales",
-      "Liderazgo técnico en desarrollo de PWAs y sistemas complejos"
+      "Liderazgo técnico en desarrollo de PWAs y sistemas complejos",
+      "Desarrollo de un Gateway con Go que interceptaba y almacenaba información para compañías de telefonía para dar datos patrocinados",
+      "Integración de un sistema OCR con una aplicación web que leía placas automovilísticas y dependiendo de esos datos levantaba una pluma mecánica por si estaba registrado como usuario o no",
+      "Realización de una plataforma multi-clientes donde se podía contratar un servicio de patrocinio de datos"
     ]
   },
   "projects": {
