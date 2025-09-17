@@ -56,27 +56,31 @@ const CVGenerator: React.FC = () => {
     const techCategories = [
       {
         name: t('skills.categories.backend.name'),
-        techs: ["Spring Boot", "Spring Cloud", "Node.js", "Java", "JavaScript", "Microservices", "NestJS", "Golang", "Express.js"],
+        techs: ["Spring Boot", "Spring Cloud", "Node.js", "Java", "JavaScript", "TypeScript", "Microservices", "NestJS", "Golang", "Express.js", "Kafka", "Socket.io"],
       },
       {
         name: t('skills.categories.frontend.name'),
-        techs: ["React", "Vue.js", "Angular", "PWA"],
+        techs: ["React", "Vue.js", "Angular", "PWA", "JavaScript", "TypeScript"],
       },
       {
         name: t('skills.categories.databases.name'),
-        techs: ["PostgreSQL", "MongoDB"],
+        techs: ["PostgreSQL", "MongoDB", "MySQL", "Firebase"],
       },
       {
         name: t('skills.categories.cloud.name'),
-        techs: ["Docker", "Kubernetes", "CI/CD", "DevOps"],
+        techs: ["Docker", "Kubernetes", "CI/CD", "DevOps", "Firebase"],
       },
       {
         name: t('skills.categories.tools.name'),
-        techs: ["Linux", "Bash", "Git"],
+        techs: ["Linux", "Bash", "Git", "Socket.io", "SonarQube","Jenkins"],
       },
       {
         name: t('skills.categories.architecture.name'),
-        techs: ["Microservices", "Distributed Systems"],
+        techs: ["Microservices", "Distributed Systems", "Kafka"],
+      },
+      {
+        name: t('skills.categories.testing.name'),
+        techs: ["Unit Testing", "Integration Testing", "JUnit", "Jest"],
       },
     ];
     doc.setFont('helvetica', 'bold');

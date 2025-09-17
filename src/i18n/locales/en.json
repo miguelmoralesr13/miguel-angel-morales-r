@@ -46,6 +46,7 @@
           "Development of React features for banking applications",
           "Creation of Node.js services with mock services for testing and development",
           "Implementation of microservices architectures in banking environments",
+          "Implementation and configuration of Apache Kafka for asynchronous communication between microservices",
           "Collaboration in agile teams for financial solutions development",
           "Maintenance and optimization of critical banking sector applications"
         ]
@@ -108,6 +109,10 @@
       "architecture": {
         "name": "Architecture & Principles",
         "icon": "🏗️"
+      },
+      "testing": {
+        "name": "Testing & Quality",
+        "icon": "🧪"
       }
     },
     "certifications_list": [
