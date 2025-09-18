@@ -47,7 +47,9 @@
           "Implementación de arquitecturas de microservicios en entornos bancarios",
           "Implementación y configuración de Apache Kafka para comunicación asíncrona entre microservicios",
           "Colaboración en equipos ágiles para desarrollo de soluciones financieras",
-          "Mantenimiento y optimización de aplicaciones críticas del sector bancario"
+          "Mantenimiento y optimización de aplicaciones críticas del sector bancario en angular y react",
+          "impleentaciond e mongodb en en una plataforma de manjeo de datos bancarios"
+
         ]
       },
       "freelance": {
@@ -59,8 +61,15 @@
           "Implementación de soluciones DevOps para optimización de despliegues",
           "Desarrollo de funcionalidades personalizadas según requerimientos del cliente",
           "Optimización de rendimiento y escalabilidad de aplicaciones web",
-          "Gestión de proyectos de desarrollo de forma independiente"
+          "Gestión de proyectos de desarrollo de forma independiente",
+          "desarrollo de una api de streaming de video con java 21, spring boot",
+          "desarrollo de un api compresora de imagenes con golang",
+          "desarrollo de una aplicaicon de web scraping para descargar anime en nodejs",
+          "desarrollo de aplicaion generadora de codigo para facilitar el desarrollo de aplicaciones en golang",
+          "desapliqgues en linux con bash",
+          "Automatizacion de despliegues con bash"
         ]
+
       },
       "ebitware": {
         "title": "Desarrollador Full Stack",

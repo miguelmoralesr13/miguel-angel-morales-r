@@ -91,7 +91,7 @@ const CVGenerator: React.FC = () => {
     doc.setFont('helvetica', 'bold');
     doc.setTextColor(36, 99, 235);
     doc.text(i18n.language === 'es' ? 'Tecnologías:' : 'Technologies:', 15, y);
-    y += 5;
+    y += 3;
     doc.setFont('helvetica', 'normal');
     techCategories.forEach(cat => {
       doc.setFont('helvetica', 'bold');
@@ -103,18 +103,7 @@ const CVGenerator: React.FC = () => {
       y = addMultilineText(doc, cat.techs.join(', '), 25, y, 140);
       y += 3;
     });
-    // Skills list (certifications, achievements)
-    doc.setFont('helvetica', 'bold');
-    doc.setTextColor(36, 99, 235);
-    doc.text(t('skills.certifications'), 15, y);
-    y += 5;
-    doc.setFont('helvetica', 'normal');
-    doc.setTextColor(0, 0, 0);
-    const certs = t('skills.certifications_list', { returnObjects: true }) as string[];
-    certs.forEach((cert) => {
-      y = addMultilineText(doc, `• ${cert}`, 20, y, 160);
-    });
-    y += 2;
+    
     doc.setFont('helvetica', 'bold');
     doc.setTextColor(36, 99, 235);
     doc.text(t('skills.achievements'), 15, y);

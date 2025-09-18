@@ -48,7 +48,8 @@
           "Implementation of microservices architectures in banking environments",
           "Implementation and configuration of Apache Kafka for asynchronous communication between microservices",
           "Collaboration in agile teams for financial solutions development",
-          "Maintenance and optimization of critical banking sector applications"
+          "Maintenance and optimization of critical banking sector applications in Angular and React",
+          "Implementation of MongoDB in a banking data management platform"
         ]
       },
       "freelance": {
@@ -60,7 +61,13 @@
           "Implementation of DevOps solutions for deployment optimization",
           "Development of custom features according to client requirements",
           "Performance and scalability optimization of web applications",
-          "Independent management of development projects"
+          "Independent management of development projects",
+          "Development of a video streaming API with Java 21, Spring Boot",
+          "Development of an image compression API with Golang",
+          "Development of a web scraping application to download anime in Node.js",
+          "Development of a code generator application to facilitate the development of applications in Golang",
+          "Apply in Linux with Bash",
+          "Automation of deployments with Bash"
         ]
       },
       "ebitware": {
